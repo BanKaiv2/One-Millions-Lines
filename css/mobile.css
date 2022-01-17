@@ -1,0 +1,123 @@
+/* FONT FAMILY */
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,700&display=swap");
+
+/* VARIABLES */
+
+:root {
+  --Blanc: #ffffff;
+  --Noir: #000000;
+  --Orange: #ff6347;
+  --Gris: #797878;
+  --Gris-clair: #d9d7d7;
+}
+
+/* ####### MOBILE ####### */
+
+* {
+  font-size: 1rem;
+  font-family: "Arvo", serif;
+  margin: 0;
+}
+
+/* ==== HEADER ==== */
+
+/* == Logo == */
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--Gris-clair);
+  padding: 10px;
+}
+
+.list {
+  border: 1px solid var(--Blanc);
+}
+
+/* == Menu == */
+
+header section {
+  color: var(--Gris-clair);
+  background: url(../images/hero-image.jpg);
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* padding: 20px 0; */
+  align-items: center;
+}
+
+.container h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 20px 0px;
+  color: var(--Blanc);
+  width: 90%;
+}
+
+.container p{
+  margin-bottom: 20px;
+  line-height: 25px;
+  width: 98%;
+}
+
+.container a {
+  text-decoration: none;
+  color: var(--Blanc);
+  border-radius: 5px;
+  background: var(--Orange);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.container img {
+  width: 25%;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bold,
+.uppercase{
+  color: white;
+}
+
+.orange{
+  color:var(--Orange)
+}
+
+.separator{
+  border-bottom: 1px solid var(--Orange);
+  width: 100px;
+}
+
+/* ==== PAGE PRINCIPALE ==== */
+
+
+main section:first-child{
+  background-color: var(--Blanc);
+}
+
+main section:nth-child(2){
+  background-color: var(--Gris-clair);
+}
+
+main section a{
+  text-decoration: none;
+  color: var(--Orange);
+  border: 1px solid var(--Gris);
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-weight: 500;
+  background: var(--Blanc);
+}
